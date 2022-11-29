@@ -1,21 +1,22 @@
 #Task_1
 
-# class StringVar:
+class StringVar:
 
-# 	txt = 'Hello World!'
-
-# 	def set(self, new_txt):
-# 		print(self.txt + new_txt)
+	txt = 'Hello world!'
 
 
+	def set_txt(self,new_text):
+		self.txt = new_text
+		print(new_text)
 
-# 	def get(self):
-# 		print(self.txt)
+
+	def get_txt(self):
+		print(self.txt)
 
 
-# person = StringVar()
-# person.set('Another text')
-# person.get()
+txt1 = StringVar()
+txt1.set_txt('Another text')
+txt1.get_txt()
 
 #Task_2
 
