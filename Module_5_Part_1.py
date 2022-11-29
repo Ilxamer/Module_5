@@ -2,19 +2,19 @@
 
 class StringVar:
 
-	txt = 'Hello world!'
+	def __init__(self,txt):
+		self.txt = txt  
 
-
-	def set_txt(self,new_text):
-		self.txt = new_text
-		print(new_text)
+	def set_txt(self, new_txt):
+		self.new_txt = new_txt.replace(self.txt,new_txt)
+		print(self.new_txt)
 
 
 	def get_txt(self):
 		print(self.txt)
 
 
-txt1 = StringVar()
+txt1 = StringVar('Some text')
 txt1.set_txt('Another text')
 txt1.get_txt()
 
