@@ -6,7 +6,7 @@ class StringVar:
 		self.txt = txt  
 
 	def set_txt(self, new_txt):
-		self.new_txt = new_txt.replace(self.txt,new_txt)
+		self.new_txt = self.txt.replace(self.txt,new_txt)
 		print(self.new_txt)
 
 
